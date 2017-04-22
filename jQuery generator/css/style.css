@@ -1,0 +1,74 @@
+.template{
+  
+  border-style: solid; 
+  text-color: red;
+  
+   
+  
+}
+
+#cand_no{
+  
+  
+  background-color: none;
+}
+
+
+#add{
+  
+  color: blue; 
+  position: absolute;
+  margin-left: -600px;
+  margin-top: -35px;
+  
+}
+
+#shadeRow{
+  
+  color:blue;
+  margin-top:0px;
+  border-style: solid; 
+  border-color: black; 
+}
+
+#underLine{
+  
+  color:blue;
+  border-style: solid;
+  border-color: black; 
+}
+
+
+#resetBtn{
+  
+  color: blue;
+  border-style: solid; 
+  border-color: black; 
+}
+
+#myTable{
+  
+  border-color: white; 
+  style: hidden; 
+  
+}
+
+
+.highlight { 
+  background-color: #DDD; 
+}
+
+
+.underline{
+    text-decoration: underline;
+   
+   
+  border-bottom: 5px solid black;
+  
+}
+
+
+#count again {
+  
+  
+}
