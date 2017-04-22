@@ -1,4 +1,4 @@
- $('[name="cand_no" ]').on('change', function() {
+ $('[name="row_no" ]').on('change', function() {
   // Not checking for Invalid input
   if (this.value != '') {
     var val = parseInt(this.value, 10);
@@ -68,6 +68,4 @@ $('tr:nth-child(10n)').toggleClass("underline");
       
     }); 
   }
- }); 
-    
-    
+ });
