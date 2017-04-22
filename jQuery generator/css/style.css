@@ -7,7 +7,7 @@
   
 }
 
-#cand_no{
+#row_no{
   
   
   background-color: none;
@@ -18,7 +18,7 @@
   
   color: blue; 
   position: absolute;
-  margin-left: -600px;
+  margin-left: -650px;
   margin-top: -35px;
   
 }
