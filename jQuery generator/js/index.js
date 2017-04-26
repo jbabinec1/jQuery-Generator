@@ -5,7 +5,7 @@
     
 
 
-   // Prevents row_no from adding without hidding GO! button
+   // Prevents row_no form from adding without hitting enter key or GO! button
   $( "row_no" ).submit(function( event ) {
   event.preventDefault();
 });
