@@ -4,6 +4,14 @@
     var val = parseInt(this.value, 10);
     
 
+
+   // Prevents row_no from adding without hidding GO! button
+  $( "row_no" ).submit(function( event ) {
+  event.preventDefault();
+});
+   
+   
+   
     
     ///Adds rows to studentTable with each click
     
