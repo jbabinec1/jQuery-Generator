@@ -69,10 +69,21 @@ $('tr:nth-child(10n)').toggleClass("underline");
      //Reset Rows Button 
    
     $("#resetBtn").click(function() {
+        event.preventDefault();
+ //remove all rows except first
+      $('#myTable tr:not(:first)').remove(); 
     
-   $('#myTable tr:not(:first)').remove();
-   $('.hidecounter').remove();
+//sets counter variable to zero after reset
+      counter = 0;
+  $("#counter").html(""); 
+  $('[name="row_no" ]').val('');
       
+      //the same with name form      
+      
+      tname = 0;
+  $("#aname").html(""); 
+  $('[tname ]').val('');
+       
       
     }); 
   }
