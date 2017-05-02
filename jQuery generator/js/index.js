@@ -14,8 +14,7 @@ $("tr").slice(2).remove();
 $("#myTable tbody").append("<tr>   <td>  row 1 </td>Row 2  <td> Row 2 </td></tr>");
       
    }   
-         
-       
+             
   var count =  $('#mytbody').children('tr').length;  
   $('#counter').html(count);
   
@@ -24,26 +23,24 @@ $("#myTable tbody").append("<tr>   <td>  row 1 </td>Row 2  <td> Row 2 </td></tr>
   $('#aname').html(name);
       });
   
-    ///Shade Every Other Row 
+   ///Shade Every Other Row 
   $("#shadeRow").click(function() {
   $('tr:nth-child(3n)').toggleClass("highlight");
 });
     
     
     //Underline every 10 rows 
-$("#underLine").click(function() {
- 
-$('tr:nth-child(10n)').toggleClass("underline");
+  $("#underLine").click(function() {
+  $('tr:nth-child(10n)').toggleClass("underline");
 
 }); 
 
      //Reset Rows Button 
    
-  $("#resetBtn").click(function() {
-      
+  $("#resetBtn").click(function() { 
  //remove all rows except first
   $('#myTable tr:not(:first)').remove(); 
-//sets counter variable to zero after reset
+//sets counter variable and value to zero after reset
       counter = 0;
   $("#counter").html(""); 
   $('[name="row_no" ]').val('');
