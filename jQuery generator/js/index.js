@@ -2,7 +2,7 @@
 $('[name="row_no"]').on('change', function() {
 $("#row_no").submit(); 
   if (this.value != '') {
-    var val = parseInt(this.value, 10);
+  var val = parseInt(this.value, 10);
    }    
    
  ///Click GO button add count number + table
@@ -16,18 +16,15 @@ $("#myTable tbody").append("<tr>   <td>  row 1 </td>Row 2  <td> Row 2 </td></tr>
    }   
          
        
-  var count =  $('#mytbody').children('tr').length;  $('#counter').html(count);
-         
-        
+  var count =  $('#mytbody').children('tr').length;  
+  $('#counter').html(count);
+  
    ///Adding coder name 
   var name = $("#tname").val();
   $('#aname').html(name);
       });
   
-  
-    
-    /// Shade Every Other Row 
-    
+    ///Shade Every Other Row 
   $("#shadeRow").click(function() {
   $('tr:nth-child(3n)').toggleClass("highlight");
 });
@@ -46,13 +43,12 @@ $('tr:nth-child(10n)').toggleClass("underline");
       
  //remove all rows except first
   $('#myTable tr:not(:first)').remove(); 
-    
 //sets counter variable to zero after reset
       counter = 0;
   $("#counter").html(""); 
   $('[name="row_no" ]').val('');
       
-      //the same with name form      
+ //the same with name form      
       
       tname = 0;
   $("#aname").html(""); 
