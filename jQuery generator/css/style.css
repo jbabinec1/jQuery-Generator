@@ -68,7 +68,10 @@
 }
 
 
-#count again {
+.td {
   
   
+  visibility: hidden;
 }
+
+
