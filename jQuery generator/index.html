@@ -12,20 +12,30 @@
 </head>
 
 <body>
+  
+<head>
+  <meta charset="UTF-8">
+  <title>jQuery generator </title>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
   <div> 
 <p>
   <label><strong>Number of Rows</strong></label>
-  <label><input name="row_no"  type="text" placeholder="Type Number of Rows" id="row_no" /></label>
+  <form><input name="row_no"  type="text" placeholder="Type Number of Rows" id="row_no" /></form>
 
-<div style="float: right; width: 40px">
-    <button id="add">GO!</button>
+<div style="float: right; ">
+    <button type ="button" id="add">GO!</button>
 </div>
   <div class="clear"></div>
 </p>
 <p>
   <label><strong>Your Name</strong></label>
-  <label><input name="tname" id="tname" type="text" placeholder="Type Your Name"  /></label> <br>
-<p>Your number + 2 = Total amount of rows</p> 
+  <label><input name="tname" id="tname" type="text" placeholder="Type Your Name"  /></label> <br> 
 <button id="shadeRow">Shade Every Other Row</button> 
 <button id="underLine"> Show Dark Line Every 10 Rows </button> 
 <button id="resetBtn">Reset Rows</button> 
@@ -34,44 +44,36 @@
 </p>
 </div> 
 
-<div class="row_fields">
+
   <table id="myTable" "txt" width="630" border="solid">
     <tbody id="mytbody">
+
       <tr> 
         <td> 
           <p>Number of rows:
+           
             <p id="counter">
+          </div>
               </span>
             </p>
+    
         </td>
     </div>
-        <td id="tname" width="0">Name
+        <td id="tname" width="0">Name: <span>
           <p id="aname">
             </span>
           </p>
-        </td>
-      </tr>
 
-      <tr>
-        <td><input name="tname" type="text" placeholder="Row 1" required="required" id="tname"/></td>
-
-        <td><input name="cand_pos" type="text" placeholder="Row 2" required="required" /></td>
-      </tr>
-  </table>
-
-
-<div class="template" id=".template" style="display:none ">
- 
-  <table>
-
-    <tr> 
-      <td><input name="cand_name" type="text" placeholder="" required="required" id="count" /></td> 
-
-      <td><input name="cand_pos" type="text" placeholder="" required="required"  /></td>
-    </tr>
+     
     </tbody>
   </table>
 </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 
     <script src="js/index.js"></script>
