@@ -1,5 +1,5 @@
 /// Rounds number entered in form to whole number 
-$('[name="row_no"]').on('change', function() {
+$('[name="row_no"]').on('change', function()  {
 $("#row_no").submit(); 
   if (this.value != '') {
     var val = parseInt(this.value, 10);
@@ -7,27 +7,25 @@ $("#row_no").submit();
     
    
  ///Click GO button add count number + table
-$('#add').bind('click', function()        {            
+$('#add').bind('click', function()  {            
         
    // Add rows to table with each click
   var times = $("input").val();
 $("tr").slice(2).remove();     
- for (var i = 0; i < times; i++) {
+ for (var i = 0; i < times; i++)  {
    if( times[i] %= 10)
      continue; 
         
  $("#myTable tbody").append("<tr>   <td>  row 1 </td>Row 2  <td> Row 2 </td></tr>");
  
       
-   }   
-         
+   }       
        
   var count =  $('#mytbody').children('tr').length;  $('#counter').html(count);
-         
-        
+               
    ///Adding coder name 
   var name = $("#tname").val();
-  $('#aname').html(name);
+ $('#aname').html(name);
       });
   
   
